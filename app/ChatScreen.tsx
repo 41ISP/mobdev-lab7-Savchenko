@@ -4,7 +4,7 @@ import { Text } from "react-native"
 const ChatScreen = () => {
     return(
         <View>
-            <Text>This is a ChatScreen</Text>
+            <Text>This is a ChatsScreen</Text>
         </View>
     );
 }

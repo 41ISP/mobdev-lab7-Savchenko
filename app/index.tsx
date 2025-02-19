@@ -8,7 +8,7 @@ const HomeScreen = () => {
     const router = useRouter();
     return(
         <View>
-            <Text>This is a HomeScreen</Text>
+            <Text>This is a ChatScreen</Text>
             
         </View>
     );

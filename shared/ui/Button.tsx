@@ -11,9 +11,12 @@ const Button = ({ children, onClick}: IButtonProps) => {
 
 const ButtonStyles = StyleSheet.create({
     btn: {
-        flexGrow: 1,
-        marginHorizontal: 5,
+        paddingVertical: 8,
+        paddingHorizontal: 12,
+        backgroundColor: '#FFF',
+        borderRadius: 8,
     },
 })
+
 
 export default Button;

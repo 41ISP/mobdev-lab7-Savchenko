@@ -21,6 +21,12 @@ const topbarStyles = StyleSheet.create({
     topbar: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 16,
+        paddingVertical: 10,
+        backgroundColor: '#007AFF',
+        borderBottomWidth: 2,
+        borderBottomColor: '#005BB5',
     }, 
 })
 

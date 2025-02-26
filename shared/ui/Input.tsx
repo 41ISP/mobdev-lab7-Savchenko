@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import {Text, TextInput, TouchableOpacity, View} from 'react-native'
+import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native'
 
 interface IInputProps {
     value: string
@@ -13,8 +13,20 @@ const Input = ({ value, setValue, placeholderValue}: IInputProps) => {
     }
     
     return(
-        <TextInput value={value} onChangeText={handleChange} placeholder={placeholderValue}/>
+        <TextInput style={InputStyles.input} value={value} onChangeText={handleChange} placeholder={placeholderValue}/>
     )
 }
 
+
+const InputStyles = StyleSheet.create({
+    input: {
+        height: 40,
+        paddingHorizontal: 12,
+        fontSize: 16,
+        color: '#333',
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#007AFF',
+    }
+})
 export default Input;

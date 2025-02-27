@@ -12,14 +12,9 @@ import 'react-native-reanimated';
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const { user } = useUserStore()
-  
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
-  
-  useEffect(() => {
-  },[])
   
   useEffect(() => {
     if (loaded) {
@@ -27,12 +22,12 @@ export default function RootLayout() {
     }
   }, [loaded]);
   
-  
   if (!loaded) {
     return null;
   }
+
   return (
-    <Stack />
+    <Slot />
   );
 }
 

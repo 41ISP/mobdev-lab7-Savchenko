@@ -17,5 +17,8 @@ export const MessengerAPI = {
         } catch(error) {
             console.log(error)
         }
+    },
+    getMessages: async () => {
+        
     }
 }
